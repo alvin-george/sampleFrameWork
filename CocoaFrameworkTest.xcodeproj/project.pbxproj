@@ -13,6 +13,8 @@
 		AD94B3541DF6B25700EC8A33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD94B3531DF6B25700EC8A33 /* Assets.xcassets */; };
 		AD94B3571DF6B25700EC8A33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD94B3551DF6B25700EC8A33 /* LaunchScreen.storyboard */; };
 		AD94B3621DF6B25700EC8A33 /* CocoaFrameworkTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD94B3611DF6B25700EC8A33 /* CocoaFrameworkTestUITests.swift */; };
+		AD94B36D1DF6B2DE00EC8A33 /* sampleCocoaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD94B36C1DF6B2DE00EC8A33 /* sampleCocoaFramework.framework */; };
+		AD94B36E1DF6B2DE00EC8A33 /* sampleCocoaFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AD94B36C1DF6B2DE00EC8A33 /* sampleCocoaFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +27,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		AD94B36F1DF6B2DE00EC8A33 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AD94B36E1DF6B2DE00EC8A33 /* sampleCocoaFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		AD94B3491DF6B25700EC8A33 /* CocoaFrameworkTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaFrameworkTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD94B34C1DF6B25700EC8A33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +52,7 @@
 		AD94B35D1DF6B25700EC8A33 /* CocoaFrameworkTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoaFrameworkTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD94B3611DF6B25700EC8A33 /* CocoaFrameworkTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaFrameworkTestUITests.swift; sourceTree = "<group>"; };
 		AD94B3631DF6B25700EC8A33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD94B36C1DF6B2DE00EC8A33 /* sampleCocoaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = sampleCocoaFramework.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD94B36D1DF6B2DE00EC8A33 /* sampleCocoaFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +77,7 @@
 		AD94B3401DF6B25600EC8A33 = {
 			isa = PBXGroup;
 			children = (
+				AD94B36C1DF6B2DE00EC8A33 /* sampleCocoaFramework.framework */,
 				AD94B34B1DF6B25700EC8A33 /* CocoaFrameworkTest */,
 				AD94B3601DF6B25700EC8A33 /* CocoaFrameworkTestUITests */,
 				AD94B34A1DF6B25700EC8A33 /* Products */,
@@ -106,6 +125,7 @@
 				AD94B3451DF6B25600EC8A33 /* Sources */,
 				AD94B3461DF6B25600EC8A33 /* Frameworks */,
 				AD94B3471DF6B25600EC8A33 /* Resources */,
+				AD94B36F1DF6B2DE00EC8A33 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -339,6 +359,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = CocoaFrameworkTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fingent.CocoaFrameworkTest;
@@ -351,6 +375,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = CocoaFrameworkTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fingent.CocoaFrameworkTest;

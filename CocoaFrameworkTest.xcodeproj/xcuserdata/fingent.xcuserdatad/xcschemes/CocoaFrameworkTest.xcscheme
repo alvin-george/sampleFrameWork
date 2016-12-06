@@ -5,6 +5,22 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AD94B3481DF6B25600EC8A33"
+               BuildableName = "CocoaFrameworkTest.app"
+               BlueprintName = "CocoaFrameworkTest"
+               ReferencedContainer = "container:CocoaFrameworkTest.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -12,7 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AD94B35C1DF6B25700EC8A33"
+               BuildableName = "CocoaFrameworkTestUITests.xctest"
+               BlueprintName = "CocoaFrameworkTestUITests"
+               ReferencedContainer = "container:CocoaFrameworkTest.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "AD94B3481DF6B25600EC8A33"
+            BuildableName = "CocoaFrameworkTest.app"
+            BlueprintName = "CocoaFrameworkTest"
+            ReferencedContainer = "container:CocoaFrameworkTest.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -26,6 +61,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "AD94B3481DF6B25600EC8A33"
+            BuildableName = "CocoaFrameworkTest.app"
+            BlueprintName = "CocoaFrameworkTest"
+            ReferencedContainer = "container:CocoaFrameworkTest.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -35,6 +80,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "AD94B3481DF6B25600EC8A33"
+            BuildableName = "CocoaFrameworkTest.app"
+            BlueprintName = "CocoaFrameworkTest"
+            ReferencedContainer = "container:CocoaFrameworkTest.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
